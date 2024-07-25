@@ -91,7 +91,7 @@ export const navItems = [
       id: 3,
       title: "Task Management App",
       des: "Perform CRUD operations on tasks. Segregate them based on their status and importance.",
-      img: "/p3.svg",
+      img: "/p3.png",
       iconLists: ["/re.svg", "/tail.svg", "/mdb.svg", "/ejs.svg", "/node.png"],
       link: "https://github.com/this-izz-nandini/TaskManagementApp",
     },
