@@ -7,6 +7,8 @@ import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoMdCopy } from "react-icons/io";
+import { Boxes } from "./bg-boxes";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 export const BentoGrid = ({
   className,
@@ -109,16 +111,21 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-          <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
+          {id!==3 && (<div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
             {title}
-          </div>
+          </div>)}
+          {id!==5 && id!==3 && (<div className="font-sans font-normal md:max-w-96 md:text-md lg:text-base text-md text-[#C1C2D3] z-10">
+            {description}
+          </div>)}
+
+          {id===5 && (<div className="font-sans font-normal md:max-w-28 md:text-md lg:text-base text-md text-[#C1C2D3] z-10">
+            {description}
+          </div>)}
+
 
           {id === 2 && <GlobeDemo />}
 
-          {id === 3 && (
+          {/* {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
@@ -141,6 +148,20 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
+              </div>
+            </div>
+          )} */}
+
+          {id===3 && (
+            <div className="relative w-96 h-48 lg:h-60 overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+              <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+        
+              <Boxes />
+              <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold relative z-20">
+                {title}
+              </div>
+              <div className="text-center font-sans font-normal  md:text-md lg:text-base text-md text-[#C1C2D3] relative z-20">
+                {description}
               </div>
             </div>
           )}

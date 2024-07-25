@@ -9,8 +9,8 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
+      title: "I thrive on tackling new challenges and learning on the go.",
+      description: "My diverse skill set ranges from web development to machine learning.",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
@@ -21,7 +21,7 @@ export const navItems = [
       id: 2,
       title: "I'm very flexible with time zone communications",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+      className: "lg:col-span-2 md:col-span-3 md:row-span-2 h-72",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "",
@@ -29,8 +29,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      title: "My DSA Journey",
+      description: "Solved 800 questions, highest rating 1770 (in LeetCode Biweekly Contest 124).",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -39,8 +39,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
+      title: "I possess strong debugging skills.",
+      description: "And my collaborative nature makes me a valuable team player",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -50,13 +50,13 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      title: "UnderGraduate",
+      description: "B. Tech. in CSE 2020 - 2024 CGPA - 8.84",
       className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+      imgClassName: "absolute right-0 top-0 md:w-72 lg:w-96",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
+      img: "/me.jpg",
+      spareImg: "grid.svg",
     },
     {
       id: 6,
@@ -105,142 +105,123 @@ export const navItems = [
     },
   ];
   
-  export const companies = [
+  export const development=[
     {
       id: 1,
       name: "CPP",
       img: "/cpp.svg",
-      nameImg: "/cloudName.svg",
     },
     {
       id: 2,
       name: "Python",
       img: "/python.svg",
-      nameImg: "/appName.svg",
     },
     {
       id: 3,
       name: "HTML",
       img: "/html.svg",
-      nameImg: "/hostName.svg",
     },
     {
       id: 4,
       name: "CSS",
       img: "/css.svg",
-      nameImg: "/streamName.svg",
     },
     {
       id: 5,
       name: "Javascript",
       img: "/js.svg",
-      nameImg: "/dockerName.svg",
     },
     {
       id: 6,
       name: "Bootstrap",
       img: "/bootstrap.svg",
-      nameImg: "/cloudName.svg",
     },
     {
       id: 7,
       name: "Node JS",
       img: "/node.png",
-      nameImg: "/appName.svg",
     },
     {
       id: 8,
       name: "React JS",
       img: "/re.svg",
-      nameImg: "/hostName.svg",
     },
     {
       id: 9,
       name: "Express JS",
       img: "/ejs.svg",
-      nameImg: "/streamName.svg",
     },
     {
       id: 10,
       name: "MondoDB",
       img: "/mdb.svg",
-      nameImg: "/dockerName.svg",
     },
     {
       id: 11,
-      name: "GitHub",
-      img: "/Github-desktop-logo-symbol.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 12,
-      name: "Postman",
-      img: "/postman-icon.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 13,
       name: "npm",
       img: "/npm.svg",
-      nameImg: "/hostName.svg",
     },
+  ]
+  export const others=[
     {
-      id: 14,
-      name: "Openai",
-      img: "/chatgpt.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 15,
-      name: "Tailwind CSS",
-      img: "/tail.svg",
-      nameImg: "/dockerName.svg",
-    },
-    {
-      id: 16,
-      name: "MS Office",
-      img: "/mso.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 17,
-      name: "Jira",
-      img: "/jira.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 18,
-      name: "VMware",
-      img: "/vmware-logo.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 19,
+      id: 1,
       name: "VS Code",
       img: "/vs-code.svg",
-      nameImg: "/streamName.svg",
     },
     {
-      id: 20,
+      id: 2,
+      name: "GitHub",
+      img: "/Github-desktop-logo-symbol.svg",
+    },
+    {
+      id: 3,
+      name: "Postman",
+      img: "/postman-icon.svg",
+    },
+    {
+      id: 4,
+      name: "Openai",
+      img: "/chatgpt.svg",
+    },
+    {
+      id: 5,
+      name: "MS Office",
+      img: "/mso.svg",
+    },
+    {
+      id: 6,
+      name: "Jira",
+      img: "/jira.svg",
+    },
+    {
+      id: 7,
+      name: "VMware",
+      img: "/vmware-logo.svg",
+    },
+    {
+      id: 8,
       name: "Next JS",
       img: "/nextjs.svg",
-      nameImg: "/streamName.svg",
     },
     {
-      id: 21,
+      id: 9,
       name: "Typscript",
       img: "/ts.svg",
-      nameImg: "/streamName.svg",
     },
-  ];
-  
+    {
+      id: 10,
+      name: "Tailwind CSS",
+      img: "/tail.svg",
+    },
+]
+
   export const workExperience = [
     {
       id: 1,
       title: "Machine Learning Intern",
       desc: "Built an AI powered chatbot capable of - testcase automation, CRUD & searching artefacts, apart from general conversational abilities. \nData mining of large sets, simplified complex DAG, made predictions based on user logs to enhance UX",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/opkey.jpg",
     },
     // {
     //   id: 2,
@@ -278,3 +259,26 @@ export const navItems = [
       link:'https://www.codechef.com/users/alt_nandini',
     },
   ];
+
+  export const icons=[
+    {
+        id: 2,
+        name: "Python",
+        img: "/python.svg",
+      },
+      {
+        id: 3,
+        name: "Postman",
+        img: "/postman-icon.svg",
+      },
+      {
+        id: 4,
+        name: "Openai",
+        img: "/chatgpt.svg",
+      },
+      {
+        id: 6,
+        name: "Jira",
+        img: "/jira.svg",
+      },
+]

@@ -1,6 +1,7 @@
 import { workExperience } from '@/data'
 import React from 'react'
 import { Button } from './ui/moving-border'
+import { CardDemo } from './ui/content-card'
 
 const Experience = () => {
   return (
@@ -8,7 +9,7 @@ const Experience = () => {
         <h1 className='heading'>
             My <span className='text-purple'>Work Experience</span>
         </h1>
-        <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
+        {/* <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
             {workExperience.map((card)=>(
                 <Button key={card.id} duration={Math.floor(Math.random() * 10000) + 10000}
                     borderRadius="1.75rem" style={{
@@ -28,7 +29,11 @@ const Experience = () => {
                     </div>
                 </Button>
             ))}
-            </div>
+            </div> */}
+        <div className='flex justify-center'>
+            <CardDemo/>
+        </div>
+        
     </div>
   )
 }

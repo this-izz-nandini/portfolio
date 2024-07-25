@@ -1,6 +1,6 @@
 import React from 'react'
-import { InfiniteMovingCards } from './ui/InfiniteMovingCards'
-import { companies } from '@/data'
+import { AnimatedTooltip } from './ui/animated-tooltip'
+import { development, others } from '@/data'
 
 const TechStack = () => {
   return (
@@ -15,23 +15,25 @@ const TechStack = () => {
             </div> */}
 
             <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10'>
-            {companies.map((company) => (
+            <div className='flex flex-row items-center justify-center mt-5 w-full'>
+                <AnimatedTooltip items={development}/>
+            </div>
+            <div className='flex flex-row items-center justify-center mb-10 w-full'>
+                <AnimatedTooltip items={others}/>
+            </div>
+            {/* {companies.map((company) => (
                 <React.Fragment key={company.id}>
                 <div className="flex md:max-w-60 max-w-32 gap-2 hover:opacity-75 hover:scale-110">
-                    <img
+                    <div className='flex flex-row items-center justify-center mb-10 w-full'>
+                        <AnimatedTooltip items={company}/>
+                        <img
                     src={company.img}
                     alt={company.name}
                     className="md:w-20 w-10"
                     />
-                    {/* <img
-                    src={company.nameImg}
-                    alt={company.name}
-                    width={company.id === 4 || company.id === 5 ? 100 : 150}
-                    className="md:w-24 w-20"
-                    /> */}
                 </div>
                 </React.Fragment>
-            ))}
+            ))} */}
             </div>
         </div>
     </div>
